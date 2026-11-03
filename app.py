@@ -550,11 +550,3 @@ if run_button or 'last_results' in st.session_state:
             mime="application/pdf",
             use_container_width=True
         )
-
-else:
-    st.info("👈 Modifica los parámetros en la barra lateral y presiona 'EJECUTAR OPTIMIZACIÓN RECO ENGINE' para iniciar la simulación.")
-
-### Cambios clave implementados:
-1. **Zero Tkinter:** Eliminado cualquier rastro de `tkinter`, `ttk`, `messagebox` y `filedialog`.
-2. **Interfaz de Streamlit:** Entradas numéricas y sliders adaptados en la barra lateral (`st.sidebar`) y paneles principales con columnas (`st.columns`).
-3. **Reportes PDF al instante:** Tu motor de PDF en ReportLab genera los bytes del documento directamente en la memoria y se descargan con un clic mediante `st.download_button`.
