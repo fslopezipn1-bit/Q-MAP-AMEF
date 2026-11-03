@@ -1,3 +1,5 @@
 streamlit
 numpy
 scipy
+matplotlib
+reportlab
