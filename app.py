@@ -553,7 +553,6 @@ if run_button or 'last_results' in st.session_state:
 
 else:
     st.info("👈 Modifica los parámetros en la barra lateral y presiona 'EJECUTAR OPTIMIZACIÓN RECO ENGINE' para iniciar la simulación.")
-```
 
 ### Cambios clave implementados:
 1. **Zero Tkinter:** Eliminado cualquier rastro de `tkinter`, `ttk`, `messagebox` y `filedialog`.
